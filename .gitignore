@@ -1,5 +1,5 @@
-/*
-!.gitignore
-!/src/
+floodlight-plus
+
+#!/src/
 #bin
 #*.jar

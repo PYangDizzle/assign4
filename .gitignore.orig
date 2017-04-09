@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+/*
+!.gitignore
+!/src/
+=======
+*
+!.gitignore
+!*/
+>>>>>>> 21cb6fcdd3a98761dbdc1bd60c165ddf0e7d7577
+#bin
+#*.jar
