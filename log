@@ -1,0 +1,2410 @@
+17:30:52.993 INFO [n.f.c.m.FloodlightModuleLoader:main] Loading modules from file l3routing.prop
+17:30:53.342 INFO [n.f.c.i.Controller:main] Controller role set to MASTER
+17:30:53.356 INFO [n.f.c.i.Controller:main] Flush switches on reconnect -- Disabled
+17:30:53.379 INFO [ArpServer:main] Initializing ArpServer...
+17:30:53.380 INFO [L3Routing:main] Initializing L3Routing...
+17:30:54.368 INFO [n.f.l.i.LinkDiscoveryManager:main] Setting autoportfast feature to OFF
+17:30:54.419 INFO [ArpServer:main] Starting ArpServer...
+17:30:54.419 INFO [L3Routing:main] Starting L3Routing...
+17:30:54.599 INFO [o.s.s.i.c.FallbackCCProvider:main] Cluster not yet configured; using fallback local configuration
+17:30:54.601 INFO [o.s.s.i.SyncManager:main] [32767] Updating sync configuration ClusterConfig [allNodes={32767=Node [hostname=localhost, port=6642, nodeId=32767, domainId=32767]}, authScheme=NO_AUTH, keyStorePath=null, keyStorePassword is unset]
+17:30:54.666 INFO [o.s.s.i.r.RPCService:main] Listening for internal floodlight RPC on localhost/127.0.0.1:6642
+17:30:54.886 INFO [n.f.c.i.Controller:main] Listening for switch connections on 0.0.0.0/0.0.0.0:6633
+17:30:57.822 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] New switch connection from /127.0.0.1:52318
+17:30:57.902 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] Disconnected switch [/127.0.0.1:52318 DPID[?]]
+17:30:59.853 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-2] New switch connection from /127.0.0.1:52319
+17:30:59.975 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-2] Switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]] bound to class class net.floodlightcontroller.core.internal.OFSwitchImpl, writeThrottle=false, description OFDescriptionStatistics [Vendor: Nicira, Inc., Model: Open vSwitch, Make: None, Version: 2.0.2, S/N: None]
+17:31:00.003 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.011 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:01 connected.
+17:31:00.011 INFO [L3Routing:main] Switch s1 added
+working with sw1
+1switch was not added in first loop
+17:31:00.012 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+Switch=s1
+17:31:00.069 INFO [L3Routing:Topology Updates] Link s1:0 -> host updated
+working with sw1
+17:31:00.069 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+Switch=s1
+17:31:00.092 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] New switch connection from /127.0.0.1:52320
+17:31:00.102 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] Switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]] bound to class class net.floodlightcontroller.core.internal.OFSwitchImpl, writeThrottle=false, description OFDescriptionStatistics [Vendor: Nicira, Inc., Model: Open vSwitch, Make: None, Version: 2.0.2, S/N: None]
+17:31:00.105 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:00.106 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:02 connected.
+17:31:00.106 INFO [L3Routing:main] Switch s2 added
+working with sw1
+working with sw2
+2switch was not added in first loop
+17:31:00.106 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.106 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+Switch=s2
+Switch=s1
+17:31:00.113 INFO [L3Routing:Topology Updates] Link s2:0 -> host updated
+working with sw1
+working with sw2
+17:31:00.113 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.113 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+Switch=s2
+Switch=s1
+17:31:00.147 INFO [L3Routing:Topology Updates] Link s1:-2 -> host updated
+working with sw1
+working with sw2
+17:31:00.147 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.147 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+Switch=s2
+Switch=s1
+17:31:00.150 INFO [L3Routing:Topology Updates] Link s2:-2 -> host updated
+working with sw1
+working with sw2
+17:31:00.152 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.153 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+Switch=s2
+Switch=s1
+17:31:00.157 INFO [L3Routing:Topology Updates] Link s2:1 -> host updated
+17:31:00.163 INFO [L3Routing:Topology Updates] Link s1:1 -> host updated
+17:31:00.164 INFO [L3Routing:Topology Updates] Link s2:2 -> host updated
+17:31:00.165 INFO [L3Routing:Topology Updates] Link s2:3 -> host updated
+17:31:00.166 INFO [L3Routing:Topology Updates] Link s1:3 -> host updated
+17:31:00.166 INFO [L3Routing:Topology Updates] Link s1:2 -> host updated
+17:31:00.163 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-2] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:02 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=2]
+17:31:00.168 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-2] Link added: Link [src=00:00:00:00:00:00:00:02 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=2]
+(2,1)link found
+working with sw1
+working with sw2
+17:31:00.178 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.179 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+Switch=s1
+17:31:00.194 INFO [L3Routing:Topology Updates] Link s2:1 -> s1:2 updated
+(2,1)link found
+working with sw1
+working with sw2
+17:31:00.195 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.195 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+Switch=s1
+17:31:00.208 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link added: Link [src=00:00:00:00:00:00:00:01 outPort=2, dst=00:00:00:00:00:00:00:02, inPort=1]
+17:31:00.218 INFO [L3Routing:Topology Updates] Link s1:2 -> s2:1 updated
+(1,2)link found
+(2,1)link found
+working with sw1
+working with sw2
+17:31:00.224 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.231 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+17:31:00.626 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-2] New switch connection from /127.0.0.1:52321
+17:31:00.632 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-2] Switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]] bound to class class net.floodlightcontroller.core.internal.OFSwitchImpl, writeThrottle=false, description OFDescriptionStatistics [Vendor: Nicira, Inc., Model: Open vSwitch, Make: None, Version: 2.0.2, S/N: None]
+17:31:00.636 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:00.638 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:03 connected.
+17:31:00.638 INFO [L3Routing:main] Switch s3 added
+(1,2)link found
+(2,1)link found
+working with sw1
+working with sw2
+working with sw3
+3switch was not added in first loop
+17:31:00.639 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.639 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:00.640 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+Switch=s3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+17:31:00.646 INFO [L3Routing:Topology Updates] Link s3:0 -> host updated
+(1,2)link found
+(2,1)link found
+working with sw1
+working with sw2
+working with sw3
+17:31:00.647 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.647 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:00.647 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+Switch=s3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+17:31:00.653 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-1] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:03 outPort=1, dst=00:00:00:00:00:00:00:02, inPort=2]
+17:31:00.653 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link added: Link [src=00:00:00:00:00:00:00:03 outPort=1, dst=00:00:00:00:00:00:00:02, inPort=2]
+17:31:00.654 INFO [L3Routing:Topology Updates] Link s3:1 -> s2:2 updated
+(3,2)link found
+(1,2)link found
+(2,1)link found
+working with sw1
+working with sw2
+working with sw3
+(3,2)link found
+(1,2)link found
+(2,1)link found
+working with sw1
+working with sw2
+working with sw3
+17:31:00.657 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.658 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:00.661 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=117:31:00.663 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-2] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:02 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=1]
+
+	Dest=s17:31:00.665 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-2] Link added: Link [src=00:00:00:00:00:00:00:02 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=1]
+1, Cost=2, Dir=s2, Port=1
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+17:31:00.672 INFO [L3Routing:Topology Updates] Link s2:2 -> s3:1 updated
+(3,2)link found
+(1,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+(3,2)link found
+(1,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+17:31:00.684 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.686 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:00.688 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+17:31:00.701 INFO [L3Routing:Topology Updates] Link s3:-2 -> host updated
+17:31:00.702 INFO [L3Routing:Topology Updates] Link s3:2 -> host updated
+17:31:00.702 INFO [L3Routing:Topology Updates] Link s3:3 -> host updated
+(3,2)link found
+(1,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+17:31:00.708 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:00.709 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:00.711 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+17:31:01.128 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] New switch connection from /127.0.0.1:52322
+17:31:01.133 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] Switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]] bound to class class net.floodlightcontroller.core.internal.OFSwitchImpl, writeThrottle=false, description OFDescriptionStatistics [Vendor: Nicira, Inc., Model: Open vSwitch, Make: None, Version: 2.0.2, S/N: None]
+17:31:01.136 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:01.137 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:04 connected.
+17:31:01.137 INFO [L3Routing:main] Switch s4 added
+(3,2)link found
+(1,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+4switch was not added in first loop
+17:31:01.138 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:01.140 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:01.140 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:01.141 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+Switch=s4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+17:31:01.161 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-2] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:04 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=2]
+17:31:01.161 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-2] Link added: Link [src=00:00:00:00:00:00:00:04 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=2]
+17:31:01.163 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-1] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:03 outPort=2, dst=00:00:00:00:00:00:00:04, inPort=2]
+17:31:01.164 INFO [L3Routing:Topology Updates] Link s4:0 -> host updated
+17:31:01.164 INFO [L3Routing:Topology Updates] Link s4:2 -> s3:2 updated
+17:31:01.165 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link added: Link [src=00:00:00:00:00:00:00:03 outPort=2, dst=00:00:00:00:00:00:00:04, inPort=2]
+(3,2)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+(3,2)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+17:31:01.168 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:01.170 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:01.170 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:01.171 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=3, Dir=s2, Port=2
+17:31:01.203 INFO [L3Routing:Topology Updates] Link s3:2 -> s4:2 updated
+17:31:01.205 INFO [L3Routing:Topology Updates] Link s4:-2 -> host updated
+17:31:01.206 INFO [L3Routing:Topology Updates] Link s4:1 -> host updated
+17:31:01.206 INFO [L3Routing:Topology Updates] Link s4:3 -> host updated
+17:31:01.207 INFO [L3Routing:Topology Updates] Link s4:4 -> host updated
+(3,2)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+17:31:01.213 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:01.218 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:01.220 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:01.222 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=3, Dir=s2, Port=2
+17:31:01.359 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-2] New switch connection from /127.0.0.1:52323
+17:31:01.366 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-2] Switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]] bound to class class net.floodlightcontroller.core.internal.OFSwitchImpl, writeThrottle=false, description OFDescriptionStatistics [Vendor: Nicira, Inc., Model: Open vSwitch, Make: None, Version: 2.0.2, S/N: None]
+17:31:01.369 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:01.447 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:05 connected.
+17:31:01.447 INFO [L3Routing:main] Switch s5 added
+(3,2)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+5switch was not added in first loop
+17:31:01.448 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:01.449 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:01.451 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:01.452 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:01.454 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=3, Dir=s2, Port=2
+Switch=s5
+17:31:01.485 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-1] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:05 outPort=3, dst=00:00:00:00:00:00:00:04, inPort=3]
+17:31:01.485 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link added: Link [src=00:00:00:00:00:00:00:05 outPort=3, dst=00:00:00:00:00:00:00:04, inPort=3]
+17:31:01.486 INFO [L3Routing:Topology Updates] Link s5:3 -> s4:3 updated
+(3,2)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+(3,2)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(2,1)link found
+(5,4)link found
+(2,17:31:01.490 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-2] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:04 outPort=3, dst=00:00:00:00:00:00:00:05, inPort=3]
+17:31:01.490 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-2] Link added: Link [src=00:00:00:00:00:00:00:04 outPort=3, dst=00:00:00:00:00:00:00:05, inPort=3]
+3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+17:31:01.677 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:01.683 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:01.683 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:01.684 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:01.685 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=3, Dir=s2, Port=2
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+17:31:01.771 INFO [L3Routing:Topology Updates] Link s4:3 -> s5:3 updated
+17:31:01.771 INFO [L3Routing:Topology Updates] Link s5:3 -> host updated
+17:31:01.771 INFO [L3Routing:Topology Updates] Link s5:0 -> host updated
+17:31:01.771 INFO [L3Routing:Topology Updates] Link s5:1 -> host updated
+17:31:01.771 INFO [L3Routing:Topology Updates] Link s5:2 -> host updated
+17:31:01.771 INFO [L3Routing:Topology Updates] Link s5:-2 -> host updated
+(3,2)link found
+17:31:01.778 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-1] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:05 outPort=2, dst=00:00:00:00:00:00:00:02, inPort=3]
+17:31:01.778 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link added: Link [src=00:00:00:00:00:00:00:05 outPort=2, dst=00:00:00:00:00:00:00:02, inPort=3]
+17:31:01.779 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-2] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:02 outPort=3, dst=00:00:00:00:00:00:00:05, inPort=2]
+17:31:01.779 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-2] Link added: Link [src=00:00:00:00:00:00:00:02 outPort=3, dst=00:00:00:00:00:00:00:05, inPort=2]
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(4,5)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(4,5)link found
+(5,2)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+17:31:01.832 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:01.844 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:01.846 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:01.847 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:01.849 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=3, Dir=s2, Port=2
+	Dest=s5, Cost=4, Dir=s2, Port=2
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+17:31:01.867 INFO [L3Routing:Topology Updates] Link s5:2 -> s2:3 updated
+17:31:01.868 INFO [L3Routing:Topology Updates] Link s2:3 -> s5:2 updated
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(4,5)link found
+(5,2)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+17:31:01.878 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:02.012 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:02.046 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:02.049 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:02.051 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=3, Dir=s2, Port=2
+	Dest=s5, Cost=4, Dir=s2, Port=2
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+17:31:02.157 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] New switch connection from /127.0.0.1:52324
+17:31:02.167 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] Switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]] bound to class class net.floodlightcontroller.core.internal.OFSwitchImpl, writeThrottle=false, description OFDescriptionStatistics [Vendor: Nicira, Inc., Model: Open vSwitch, Make: None, Version: 2.0.2, S/N: None]
+17:31:02.169 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+17:31:02.171 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:06 connected.
+17:31:02.171 INFO [L3Routing:main] Switch s6 added
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(4,5)link found
+(5,2)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+6switch was not added in first loop
+17:31:02.178 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:02.179 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:02.180 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:02.252 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:02.253 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:02.254 INFO [n.f.c.OFSwitchBase:main] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=3, Dir=s2, Port=2
+	Dest=s5, Cost=4, Dir=s2, Port=2
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+17:31:02.295 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-1] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:06 outPort=3, dst=00:00:00:00:00:00:00:04, inPort=4]
+17:31:02.295 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link added: Link [src=00:00:00:00:00:00:00:06 outPort=3, dst=00:00:00:00:00:00:00:04, inPort=4]
+17:31:02.296 INFO [L3Routing:Topology Updates] Link s6:3 -> s4:4 updated
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(1,2)link found
+(6,4)link found
+(4,3)link found
+(4,5)link found
+(5,2)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(1,2)link found
+(6,4)link found
+(4,3)link found
+(4,5)link found
+(5,2)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:02.300 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:02.302 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-1] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:04 outPort=4, dst=00:00:00:00:00:00:00:06, inPort=3]
+17:31:02.302 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link added: Link [src=00:00:00:00:00:00:00:04 outPort=4, dst=00:00:00:00:00:00:00:06, inPort=3]
+17:31:02.392 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-2] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:06 outPort=4, dst=00:00:00:00:00:00:00:01, inPort=3]
+17:31:02.392 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-2] Link added: Link [src=00:00:00:00:00:00:00:06 outPort=4, dst=00:00:00:00:00:00:00:01, inPort=3]
+17:31:02.394 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-2] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:06 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=3]
+17:31:02.394 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-2] Link added: Link [src=00:00:00:00:00:00:00:06 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=3]
+17:31:02.395 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-1] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:01 outPort=3, dst=00:00:00:00:00:00:00:06, inPort=4]
+17:31:02.396 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link added: Link [src=00:00:00:00:00:00:00:01 outPort=3, dst=00:00:00:00:00:00:00:06, inPort=4]
+17:31:02.396 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-1] Inter-switch link detected: Link [src=00:00:00:00:00:00:00:03 outPort=3, dst=00:00:00:00:00:00:00:06, inPort=2]
+17:31:02.396 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link added: Link [src=00:00:00:00:00:00:00:03 outPort=3, dst=00:00:00:00:00:00:00:06, inPort=2]
+17:31:02.397 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:02.397 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:02.398 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:02.398 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:02.399 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=3, Dir=s2, Port=2
+	Dest=s5, Cost=4, Dir=s2, Port=2
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+17:31:02.430 INFO [L3Routing:Topology Updates] Link s4:4 -> s6:3 updated
+17:31:02.430 INFO [L3Routing:Topology Updates] Link s6:3 -> host updated
+17:31:02.433 INFO [L3Routing:Topology Updates] Link s6:0 -> host updated
+17:31:02.433 INFO [L3Routing:Topology Updates] Link s6:4 -> s1:3 updated
+17:31:02.434 INFO [L3Routing:Topology Updates] Link s6:2 -> s3:3 updated
+17:31:02.434 INFO [L3Routing:Topology Updates] Link s1:3 -> s6:4 updated
+17:31:02.435 INFO [L3Routing:Topology Updates] Link s3:3 -> s6:2 updated
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:02.539 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:02.540 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:02.541 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:02.542 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:02.543 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:02.544 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:02.635 INFO [L3Routing:Topology Updates] Link s6:1 -> host updated
+17:31:02.635 INFO [L3Routing:Topology Updates] Link s6:-2 -> host updated
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:02.640 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:02.660 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:02.661 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:02.661 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:02.661 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:02.662 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:02.731 INFO [L3Routing:New I/O server worker #2-2] Host h1 added
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:02.846 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:02.853 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:02.856 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:02.858 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:02.865 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:02.867 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:03.720 INFO [L3Routing:New I/O server worker #2-2] Host h2 added
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:03.738 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:03.746 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:03.750 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:03.753 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:03.757 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:03.764 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:04.739 INFO [L3Routing:New I/O server worker #2-1] Host h3 added
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:04.755 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:04.762 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:04.767 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:04.774 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:04.780 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:04.786 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:05.763 INFO [L3Routing:New I/O server worker #2-1] Host h4 added
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:05.787 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:05.794 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:05.805 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:05.811 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:05.820 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:05.830 INFO [n.f.c.OFSwitchBase:New I/O server worker #2-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:09.663 INFO [n.f.l.i.LinkDiscoveryManager:New I/O server worker #2-1] Inter-switch link updated: Link [src=00:00:00:00:00:00:00:01 outPort=2, dst=00:00:00:00:00:00:00:02, inPort=1]
+17:31:09.663 WARN [n.f.l.i.L.s.notification:New I/O server worker #2-1] Link updated: Link [src=00:00:00:00:00:00:00:01 outPort=2, dst=00:00:00:00:00:00:00:02, inPort=1]
+17:31:09.664 INFO [L3Routing:Topology Updates] Link s1:2 -> s2:1 updated
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:09.667 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:09.692 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:09.705 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:09.713 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:09.719 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:09.726 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:35.710 INFO [L3Routing:Topology Updates] Link s1:2 -> s2:1 updated
+17:31:35.710 INFO [L3Routing:Topology Updates] Link s6:3 -> s4:4 updated
+17:31:35.710 INFO [L3Routing:Topology Updates] Link s6:4 -> s1:3 updated
+17:31:35.710 INFO [L3Routing:Topology Updates] Link s4:2 -> s3:2 updated
+17:31:35.711 INFO [L3Routing:Topology Updates] Link s5:2 -> s2:3 updated
+17:31:35.711 INFO [L3Routing:Topology Updates] Link s2:1 -> s1:2 updated
+17:31:35.711 INFO [L3Routing:Topology Updates] Link s2:2 -> s3:1 updated
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:35.714 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:35.719 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:35.726 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:35.732 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:35.738 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:35.745 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:37.711 INFO [L3Routing:Topology Updates] Link s4:4 -> s6:3 updated
+17:31:37.711 INFO [L3Routing:Topology Updates] Link s3:1 -> s2:2 updated
+17:31:37.711 INFO [L3Routing:Topology Updates] Link s2:3 -> s5:2 updated
+17:31:37.711 INFO [L3Routing:Topology Updates] Link s1:3 -> s6:4 updated
+17:31:37.711 INFO [L3Routing:Topology Updates] Link s1:2 -> s2:1 updated
+17:31:37.711 INFO [L3Routing:Topology Updates] Link s6:3 -> s4:4 updated
+17:31:37.712 INFO [L3Routing:Topology Updates] Link s6:4 -> s1:3 updated
+17:31:37.712 INFO [L3Routing:Topology Updates] Link s4:2 -> s3:2 updated
+17:31:37.712 INFO [L3Routing:Topology Updates] Link s5:2 -> s2:3 updated
+17:31:37.713 INFO [L3Routing:Topology Updates] Link s2:1 -> s1:2 updated
+17:31:37.713 INFO [L3Routing:Topology Updates] Link s2:2 -> s3:1 updated
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:37.731 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:37.737 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:37.744 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:37.751 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:37.762 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:37.772 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:44.727 INFO [L3Routing:Topology Updates] Link s3:2 -> s4:2 updated
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:44.736 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:44.737 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:44.743 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:44.754 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:44.768 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:44.775 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:44.833 INFO [L3Routing:Topology Updates] Link s4:3 -> s5:3 updated
+17:31:44.837 INFO [L3Routing:Topology Updates] Link s3:3 -> s6:2 updated
+17:31:44.838 INFO [L3Routing:Topology Updates] Link s5:3 -> s4:3 updated
+17:31:44.838 INFO [L3Routing:Topology Updates] Link s4:4 -> s6:3 updated
+17:31:44.839 INFO [L3Routing:Topology Updates] Link s3:1 -> s2:2 updated
+17:31:44.839 INFO [L3Routing:Topology Updates] Link s2:3 -> s5:2 updated
+17:31:44.839 INFO [L3Routing:Topology Updates] Link s1:3 -> s6:4 updated
+17:31:44.840 INFO [L3Routing:Topology Updates] Link s1:2 -> s2:1 updated
+17:31:44.840 INFO [L3Routing:Topology Updates] Link s6:3 -> s4:4 updated
+17:31:44.840 INFO [L3Routing:Topology Updates] Link s6:4 -> s1:3 updated
+17:31:44.841 INFO [L3Routing:Topology Updates] Link s4:2 -> s3:2 updated
+17:31:44.841 INFO [L3Routing:Topology Updates] Link s5:2 -> s2:3 updated
+17:31:44.842 INFO [L3Routing:Topology Updates] Link s2:1 -> s1:2 updated
+17:31:44.842 INFO [L3Routing:Topology Updates] Link s2:2 -> s3:1 updated
+(3,4)link found
+(6,3)link found
+(4,5)link found
+(3,6)link found
+(5,4)link found
+(4,6)link found
+(3,2)link found
+(2,5)link found
+(1,6)link found
+(6,4)link found
+(1,2)link found
+(6,1)link found
+(4,3)link found
+(5,2)link found
+(2,1)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+working with sw6
+17:31:44.855 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:31:44.860 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:31:44.866 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:31:44.872 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:31:44.881 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:31:44.889 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:31:46.471 INFO [ArpServer:New I/O server worker #2-2] Received ARP request for 10.0.0.2 from 00:00:00:00:00:01
+17:31:46.473 INFO [ArpServer:New I/O server worker #2-2] Sending ARP reply 10.0.0.2->00:00:00:00:00:02
+17:31:46.475 INFO [SwitchCommands:New I/O server worker #2-2] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:02
+dl_dst: 00:00:00:00:00:01
+nw_src: 10.0.0.2
+nw_dst: 10.0.0.1
+17:31:46.476 INFO [ArpServer:New I/O server worker #2-2] Received ARP request for 10.0.0.1 from 00:00:00:00:00:02
+17:31:46.477 INFO [ArpServer:New I/O server worker #2-2] Sending ARP reply 10.0.0.1->00:00:00:00:00:01
+17:31:46.481 INFO [SwitchCommands:New I/O server worker #2-2] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:01
+dl_dst: 00:00:00:00:00:02
+nw_src: 10.0.0.1
+nw_dst: 10.0.0.2
+17:31:46.484 INFO [ArpServer:New I/O server worker #2-2] Received ARP request for 10.0.0.3 from 00:00:00:00:00:01
+17:31:46.484 INFO [ArpServer:New I/O server worker #2-2] Sending ARP reply 10.0.0.3->00:00:00:00:00:03
+17:31:46.489 INFO [ArpServer:New I/O server worker #2-1] Received ARP request for 10.0.0.1 from 00:00:00:00:00:03
+17:31:46.490 INFO [ArpServer:New I/O server worker #2-1] Sending ARP reply 10.0.0.1->00:00:00:00:00:01
+17:31:46.492 INFO [SwitchCommands:New I/O server worker #2-2] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:03
+dl_dst: 00:00:00:00:00:01
+nw_src: 10.0.0.3
+nw_dst: 10.0.0.1
+17:31:46.493 INFO [SwitchCommands:New I/O server worker #2-1] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:01
+dl_dst: 00:00:00:00:00:03
+nw_src: 10.0.0.1
+nw_dst: 10.0.0.3
+17:31:46.503 INFO [ArpServer:New I/O server worker #2-2] Received ARP request for 10.0.0.4 from 00:00:00:00:00:01
+17:31:46.503 INFO [ArpServer:New I/O server worker #2-2] Sending ARP reply 10.0.0.4->00:00:00:00:00:04
+17:31:46.505 INFO [ArpServer:New I/O server worker #2-1] Received ARP request for 10.0.0.1 from 00:00:00:00:00:04
+17:31:46.506 INFO [ArpServer:New I/O server worker #2-1] Sending ARP reply 10.0.0.1->00:00:00:00:00:01
+17:31:46.508 INFO [SwitchCommands:New I/O server worker #2-1] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:01
+dl_dst: 00:00:00:00:00:04
+nw_src: 10.0.0.1
+nw_dst: 10.0.0.4
+17:31:46.509 INFO [SwitchCommands:New I/O server worker #2-2] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:04
+dl_dst: 00:00:00:00:00:01
+nw_src: 10.0.0.4
+nw_dst: 10.0.0.1
+17:31:46.519 INFO [ArpServer:New I/O server worker #2-2] Received ARP request for 10.0.0.3 from 00:00:00:00:00:02
+17:31:46.519 INFO [ArpServer:New I/O server worker #2-2] Sending ARP reply 10.0.0.3->00:00:00:00:00:03
+17:31:46.520 INFO [ArpServer:New I/O server worker #2-1] Received ARP request for 10.0.0.2 from 00:00:00:00:00:03
+17:31:46.522 INFO [ArpServer:New I/O server worker #2-1] Sending ARP reply 10.0.0.2->00:00:00:00:00:02
+17:31:46.524 INFO [SwitchCommands:New I/O server worker #2-1] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:02
+dl_dst: 00:00:00:00:00:03
+nw_src: 10.0.0.2
+nw_dst: 10.0.0.3
+17:31:46.524 INFO [SwitchCommands:New I/O server worker #2-2] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:03
+dl_dst: 00:00:00:00:00:02
+nw_src: 10.0.0.3
+nw_dst: 10.0.0.2
+17:31:46.529 INFO [ArpServer:New I/O server worker #2-2] Received ARP request for 10.0.0.4 from 00:00:00:00:00:02
+17:31:46.530 INFO [ArpServer:New I/O server worker #2-2] Sending ARP reply 10.0.0.4->00:00:00:00:00:04
+17:31:46.531 INFO [ArpServer:New I/O server worker #2-1] Received ARP request for 10.0.0.2 from 00:00:00:00:00:04
+17:31:46.532 INFO [ArpServer:New I/O server worker #2-1] Sending ARP reply 10.0.0.2->00:00:00:00:00:02
+17:31:46.534 INFO [SwitchCommands:New I/O server worker #2-1] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:02
+dl_dst: 00:00:00:00:00:04
+nw_src: 10.0.0.2
+nw_dst: 10.0.0.4
+17:31:46.535 INFO [SwitchCommands:New I/O server worker #2-2] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:04
+dl_dst: 00:00:00:00:00:02
+nw_src: 10.0.0.4
+nw_dst: 10.0.0.2
+17:31:46.546 INFO [ArpServer:New I/O server worker #2-1] Received ARP request for 10.0.0.4 from 00:00:00:00:00:03
+17:31:46.548 INFO [ArpServer:New I/O server worker #2-1] Sending ARP reply 10.0.0.4->00:00:00:00:00:04
+17:31:46.550 INFO [SwitchCommands:New I/O server worker #2-1] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:04
+dl_dst: 00:00:00:00:00:03
+nw_src: 10.0.0.4
+nw_dst: 10.0.0.3
+17:31:46.551 INFO [ArpServer:New I/O server worker #2-1] Received ARP request for 10.0.0.3 from 00:00:00:00:00:04
+17:31:46.552 INFO [ArpServer:New I/O server worker #2-1] Sending ARP reply 10.0.0.3->00:00:00:00:00:03
+17:31:46.554 INFO [SwitchCommands:New I/O server worker #2-1] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:03
+dl_dst: 00:00:00:00:00:04
+nw_src: 10.0.0.3
+nw_dst: 10.0.0.4
+17:32:01.994 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:06 disconnected.
+17:32:01.996 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:01 outPort=3, dst=00:00:00:00:00:00:00:06, inPort=4]
+17:32:01.996 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:01 outPort=3, dst=00:00:00:00:00:00:00:06, inPort=4]
+17:32:01.996 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:06 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=3]
+17:32:01.996 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:06 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=3]
+17:32:01.996 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:06 outPort=3, dst=00:00:00:00:00:00:00:04, inPort=4]
+17:32:01.996 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:06 outPort=3, dst=00:00:00:00:00:00:00:04, inPort=4]
+17:32:01.996 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:06 outPort=4, dst=00:00:00:00:00:00:00:01, inPort=3]
+17:32:02.011 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:06 outPort=4, dst=00:00:00:00:00:00:00:01, inPort=3]
+17:32:02.014 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=3, dst=00:00:00:00:00:00:00:06, inPort=2]
+17:32:02.018 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=3, dst=00:00:00:00:00:00:00:06, inPort=2]
+17:32:02.006 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] Disconnected switch OFSwitchBase [/127.0.0.1:52324 DPID[00:00:00:00:00:00:00:06]]
+17:32:02.026 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=4, dst=00:00:00:00:00:00:00:06, inPort=3]
+17:32:02.027 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=4, dst=00:00:00:00:00:00:00:06, inPort=3]
+17:32:02.028 INFO [L3Routing:Topology Updates] Link s1:3 -> s6:4 updated
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(5,2)link found
+(4,5)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+17:32:02.031 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:32:02.033 INFO [L3Routing:main] Switch s6 removed
+17:32:02.043 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:32:02.053 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:32:02.060 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:32:02.069 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:32:02.071 ERROR [n.f.c.i.Controller:main] Exception in controller updates loop
+java.lang.NullPointerException: null
+	at java.util.concurrent.ConcurrentHashMap.hash(ConcurrentHashMap.java:333) ~[na:1.7.0_121]
+	at java.util.concurrent.ConcurrentHashMap.remove(ConcurrentHashMap.java:1175) ~[na:1.7.0_121]
+	at edu.wisc.cs.sdn.apps.l3routing.L3Routing.switchRemoved(L3Routing.java:399) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller$SwitchUpdate.dispatch(Controller.java:1519) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller.run(Controller.java:2184) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.Main.main(Main.java:63) [FloodlightWithApps.jar:na]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:32:02.130 INFO [L3Routing:Topology Updates] Link s6:2 -> s3:3 updated
+17:32:02.131 INFO [L3Routing:Topology Updates] Link s6:3 -> s4:4 updated
+17:32:02.132 INFO [L3Routing:Topology Updates] Link s6:4 -> s1:3 updated
+17:32:02.133 INFO [L3Routing:Topology Updates] Link s3:3 -> s6:2 updated
+17:32:02.134 INFO [L3Routing:Topology Updates] Link s4:4 -> s6:3 updated
+17:32:02.134 INFO [L3Routing:Topology Updates] Link s6:0 -> host updated
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(5,2)link found
+(4,5)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+17:32:02.143 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:32:02.152 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:32:02.158 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:32:02.163 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:32:02.173 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:32:02.301 INFO [n.f.d.i.Device:Scheduled-2] updateAttachmentPoint: ap [AttachmentPoint [sw=6, port=1, activeSince=1491784265763, lastSeen=1491784266779]]  newmap null 
+17:32:02.302 INFO [L3Routing:Scheduled-2] Host h4 is no longer attached to a switch
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(5,2)link found
+(4,5)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+17:32:02.308 INFO [n.f.c.OFSwitchBase:Scheduled-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:32:02.313 INFO [n.f.c.OFSwitchBase:Scheduled-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:32:02.317 INFO [n.f.c.OFSwitchBase:Scheduled-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:32:02.321 INFO [n.f.c.OFSwitchBase:Scheduled-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:32:02.325 INFO [n.f.c.OFSwitchBase:Scheduled-2] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:32:15.784 INFO [L3Routing:Topology Updates] Link s4:3 -> s5:3 updated
+17:32:15.784 INFO [L3Routing:Topology Updates] Link s5:3 -> s4:3 updated
+17:32:15.784 INFO [L3Routing:Topology Updates] Link s3:1 -> s2:2 updated
+17:32:15.785 INFO [L3Routing:Topology Updates] Link s2:3 -> s5:2 updated
+17:32:15.785 INFO [L3Routing:Topology Updates] Link s1:2 -> s2:1 updated
+17:32:15.785 INFO [L3Routing:Topology Updates] Link s4:2 -> s3:2 updated
+17:32:15.785 INFO [L3Routing:Topology Updates] Link s5:2 -> s2:3 updated
+17:32:15.785 INFO [L3Routing:Topology Updates] Link s2:1 -> s1:2 updated
+17:32:15.785 INFO [L3Routing:Topology Updates] Link s2:2 -> s3:1 updated
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(1,2)link found
+(4,3)link found
+(5,2)link found
+(4,5)link found
+(2,1)link found
+(5,4)link found
+(2,3)link found
+working with sw1
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+17:32:15.786 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:32:15.791 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:32:15.797 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:32:15.801 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:32:15.805 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:32:23.562 INFO [ArpServer:New I/O server worker #2-2] Received ARP request for 10.0.0.2 from 00:00:00:00:00:01
+17:32:23.566 INFO [ArpServer:New I/O server worker #2-2] Sending ARP reply 10.0.0.2->00:00:00:00:00:02
+17:32:23.568 INFO [SwitchCommands:New I/O server worker #2-2] Forwarding packet: 
+arp
+dl_vlan: untagged
+dl_vlan_pcp: 0
+dl_src: 00:00:00:00:00:02
+dl_dst: 00:00:00:00:00:01
+nw_src: 10.0.0.2
+nw_dst: 10.0.0.1
+17:32:25.896 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-2] Disconnected switch OFSwitchBase [/127.0.0.1:52319 DPID[00:00:00:00:00:00:00:01]]
+17:32:25.896 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:01 disconnected.
+17:32:25.896 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:01 outPort=2, dst=00:00:00:00:00:00:00:02, inPort=1]
+17:32:25.903 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:01 outPort=2, dst=00:00:00:00:00:00:00:02, inPort=1]
+17:32:25.904 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=2]
+17:32:25.904 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=2]
+17:32:25.904 INFO [L3Routing:main] Switch s1 removed
+17:32:25.904 ERROR [n.f.c.i.Controller:main] Exception in controller updates loop
+java.lang.NullPointerException: null
+	at java.util.concurrent.ConcurrentHashMap.hash(ConcurrentHashMap.java:333) ~[na:1.7.0_121]
+	at java.util.concurrent.ConcurrentHashMap.remove(ConcurrentHashMap.java:1175) ~[na:1.7.0_121]
+	at edu.wisc.cs.sdn.apps.l3routing.L3Routing.switchRemoved(L3Routing.java:399) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller$SwitchUpdate.dispatch(Controller.java:1519) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller.run(Controller.java:2184) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.Main.main(Main.java:63) [FloodlightWithApps.jar:na]
+17:32:25.910 INFO [L3Routing:Topology Updates] Link s1:2 -> s2:1 updated
+17:32:25.910 INFO [L3Routing:Topology Updates] Link s2:1 -> s1:2 updated
+17:32:25.910 INFO [L3Routing:Topology Updates] Link s1:0 -> host updated
+(3,2)link found
+(2,5)link found
+(3,4)link found
+(4,3)link found
+(5,2)link found
+(4,5)link found
+(5,4)link found
+(2,3)link found
+working with sw2
+working with sw3
+working with sw4
+working with sw5
+17:32:25.911 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:32:25.927 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:32:25.936 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:32:25.942 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=317:32:26.037 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:02 port s2-eth1 changed: DOWN
+, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=417:32:26.050 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:02 port s2-eth1 changed: DELETE
+
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s117:32:26.195 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] Disconnected switch OFSwitchBase [/127.0.0.1:52320 DPID[00:00:00:00:00:00:00:02]]
+17:32:26.196 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:02 disconnected.
+17:32:26.196 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=1, dst=00:00:00:00:00:00:00:02, inPort=2]
+17:32:26.196 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=1, dst=00:00:00:00:00:00:00:02, inPort=2]
+17:32:26.196 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=3, dst=00:00:00:00:00:00:00:05, inPort=2]
+17:32:26.196 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=3, dst=00:00:00:00:00:00:00:05, inPort=2]
+17:32:26.196 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:05 outPort=2, dst=00:00:00:00:00:00:00:02, inPort=3]
+17:32:26.200 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:05 outPort=2, dst=00:00:00:00:00:00:00:02, inPort=3]
+17:32:26.200 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=1]
+17:32:26.200 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=1]
+17:32:26.200 INFO [L3Routing:main] Switch s2 removed
+17:32:26.200 ERROR [n.f.c.i.Controller:main] Exception in controller updates loop
+java.lang.NullPointerException: null
+	at java.util.concurrent.ConcurrentHashMap.hash(ConcurrentHashMap.java:333) ~[na:1.7.0_121]
+	at java.util.concurrent.ConcurrentHashMap.remove(ConcurrentHashMap.java:1175) ~[na:1.7.0_121]
+	at edu.wisc.cs.sdn.apps.l3routing.L3Routing.switchRemoved(L3Routing.java:399) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller$SwitchUpdate.dispatch(Controller.java:1519) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller.run(Controller.java:2184) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.Main.main(Main.java:63) [FloodlightWithApps.jar:na]
+, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:32:26.219 INFO [L3Routing:Topology Updates] Link s2:1 -> host updated
+17:32:26.220 INFO [L3Routing:Topology Updates] Link s2:1 -> host updated
+17:32:26.221 INFO [L3Routing:Topology Updates] Link s3:1 -> s2:2 updated
+17:32:26.224 INFO [L3Routing:Topology Updates] Link s2:3 -> s5:2 updated
+17:32:26.225 INFO [L3Routing:Topology Updates] Link s5:2 -> s2:3 updated
+17:32:26.225 INFO [L3Routing:Topology Updates] Link s2:2 -> s3:1 updated
+17:32:26.227 INFO [L3Routing:Topology Updates] Link s2:0 -> host updated
+(3,4)link found
+(4,3)link found
+(4,5)link found
+(5,4)link found
+working with sw3
+working with sw4
+working with sw5
+17:32:26.230 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:32:26.236 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:32:26.241 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s517:32:26.271 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:03 port s3-eth1 changed: DOWN
+17:32:26.271 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:03 port s3-eth1 changed: DELETE
+, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s17:32:26.325 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:05 port s5-eth2 changed: DOWN
+17:32:26.327 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:05 port s5-eth2 changed: DELETE
+5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+17:32:26.383 INFO [n.f.d.i.Device:Scheduled-1] updateAttachmentPoint: ap [AttachmentPoint [sw=1, port=1, activeSince=1491784262716, lastSeen=1491784263707]]  newmap null 
+17:32:26.388 INFO [L3Routing:Scheduled-1] Host h1 is no longer attached to a switch
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=317:32:26.416 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-2] Disconnected switch OFSwitchBase [/127.0.0.1:52321 DPID[00:00:00:00:00:00:00:03]]
+17:32:26.416 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:03 disconnected.
+17:32:26.416 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=2, dst=00:00:00:00:00:00:00:04, inPort=2]
+17:32:26.416 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=2, dst=00:00:00:00:00:00:00:04, inPort=2]
+17:32:26.416 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=2]
+17:32:26.416 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=2]
+17:32:26.416 INFO [L3Routing:main] Switch s3 removed
+17:32:26.417 ERROR [n.f.c.i.Controller:main] Exception in controller updates loop
+java.lang.NullPointerException: null
+	at java.util.concurrent.ConcurrentHashMap.hash(ConcurrentHashMap.java:333) ~[na:1.7.0_121]
+	at java.util.concurrent.ConcurrentHashMap.remove(ConcurrentHashMap.java:1175) ~[na:1.7.0_121]
+	at edu.wisc.cs.sdn.apps.l3routing.L3Routing.switchRemoved(L3Routing.java:399) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller$SwitchUpdate.dispatch(Controller.java:1519) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller.run(Controller.java:2184) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.Main.main(Main.java:63) [FloodlightWithApps.jar:na]
+
+	Dest=s6, Cost=5, Dir=s4, Port=3
+(4,5)link found
+(5,4)link found
+working with sw4
+working with sw5
+17:32:26.428 INFO [n.f.c.OFSwitchBase:Scheduled-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:32:26.434 INFO [n.f.c.OFSwitchBase:Scheduled-1] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s17:32:26.448 INFO [L3Routing:Topology Updates] Link s3:1 -> host updated
+1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=17:32:26.450 INFO [L3Routing:Topology Updates] Link s3:1 -> host updated
+2, Dir=s4, Port=317:32:26.451 INFO [L3Routing:Topology Updates] Link s5:2 -> host updated
+
+Switch=s417:32:26.451 INFO [L3Routing:Topology Updates] Link s5:2 -> host updated
+
+	Dest=s17:32:26.451 INFO [L3Routing:Topology Updates] Link s3:2 -> s4:2 updated
+3, Cost=1, Dir=s3, Port=217:32:26.452 INFO [L3Routing:Topology Updates] Link s4:2 -> s3:2 updated
+
+	Dest=s2, Cost=217:32:26.452 INFO [L3Routing:Topology Updates] Link s3:0 -> host updated
+, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s17:32:26.502 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:04 port s4-eth2 changed: DOWN
+17:32:26.504 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:04 port s4-eth2 changed: DELETE
+3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+(4,5)link found
+(5,4)link found
+working with sw4
+working with sw5
+17:32:26.535 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:32:26.536 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+17:32:26.667 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-1] Disconnected switch OFSwitchBase [/127.0.0.1:52322 DPID[00:00:00:00:00:00:00:04]]
+17:32:26.667 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:04 disconnected.
+17:32:26.668 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=3, dst=00:00:00:00:00:00:00:05, inPort=3]
+17:32:26.668 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=3, dst=00:00:00:00:00:00:00:05, inPort=3]
+17:32:26.668 INFO [n.f.l.i.LinkDiscoveryManager:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:05 outPort=3, dst=00:00:00:00:00:00:00:04, inPort=3]
+17:32:26.668 WARN [n.f.l.i.L.s.notification:main] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:05 outPort=3, dst=00:00:00:00:00:00:00:04, inPort=3]
+17:32:26.668 INFO [L3Routing:main] Switch s4 removed
+17:32:26.668 ERROR [n.f.c.i.Controller:main] Exception in controller updates loop
+java.lang.NullPointerException: null
+	at java.util.concurrent.ConcurrentHashMap.hash(ConcurrentHashMap.java:333) ~[na:1.7.0_121]
+	at java.util.concurrent.ConcurrentHashMap.remove(ConcurrentHashMap.java:1175) ~[na:1.7.0_121]
+	at edu.wisc.cs.sdn.apps.l3routing.L3Routing.switchRemoved(L3Routing.java:399) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller$SwitchUpdate.dispatch(Controller.java:1519) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller.run(Controller.java:2184) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.Main.main(Main.java:63) [FloodlightWithApps.jar:na]
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:32:26.733 INFO [L3Routing:Topology Updates] Link s4:2 -> host updated
+17:32:26.734 INFO [L3Routing:Topology Updates] Link s4:2 -> host updated
+17:32:26.742 INFO [L3Routing:Topology Updates] Link s4:3 -> s5:3 updated
+17:32:26.742 INFO [L3Routing:Topology Updates] Link s5:3 -> s4:3 updated
+17:32:26.743 INFO [L3Routing:Topology Updates] Link s4:0 -> host updated
+working with sw5
+17:32:26.744 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=117:32:26.803 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:05 port s5-eth3 changed: DOWN
+
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=217:32:26.830 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:05 port s5-eth3 changed: DELETE
+, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:32:26.913 INFO [L3Routing:Topology Updates] Link s5:3 -> host updated
+17:32:26.915 INFO [L3Routing:Topology Updates] Link s5:3 -> host updated
+working with sw5
+17:32:26.918 INFO [n.f.c.OFSwitchBase:Topology Updates] Clearing all flows on switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s317:32:26.946 INFO [n.f.c.i.OFChannelHandler:New I/O server worker #2-2] Disconnected switch OFSwitchBase [/127.0.0.1:52323 DPID[00:00:00:00:00:00:00:05]]
+17:32:26.949 WARN [n.f.c.i.C.s.notification:main] Switch 00:00:00:00:00:00:00:05 disconnected.
+17:32:26.949 INFO [L3Routing:main] Switch s5 removed
+17:32:26.949 ERROR [n.f.c.i.Controller:main] Exception in controller updates loop
+java.lang.NullPointerException: null
+	at java.util.concurrent.ConcurrentHashMap.hash(ConcurrentHashMap.java:333) ~[na:1.7.0_121]
+	at java.util.concurrent.ConcurrentHashMap.remove(ConcurrentHashMap.java:1175) ~[na:1.7.0_121]
+	at edu.wisc.cs.sdn.apps.l3routing.L3Routing.switchRemoved(L3Routing.java:399) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller$SwitchUpdate.dispatch(Controller.java:1519) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.internal.Controller.run(Controller.java:2184) ~[FloodlightWithApps.jar:na]
+	at net.floodlightcontroller.core.Main.main(Main.java:63) [FloodlightWithApps.jar:na]
+, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:32:27.029 INFO [L3Routing:Topology Updates] Link s5:0 -> host updated
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=17:32:27.055 INFO [n.f.d.i.Device:Scheduled-3] updateAttachmentPoint: ap [AttachmentPoint [sw=4, port=1, activeSince=1491784264739, lastSeen=1491784265751]]  newmap null 
+17:32:27.056 INFO [L3Routing:Scheduled-3] Host h3 is no longer attached to a switch
+2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3
+17:32:27.075 INFO [n.f.d.i.Device:Scheduled-3] updateAttachmentPoint: ap [AttachmentPoint [sw=5, port=1, activeSince=1491784263719, lastSeen=1491784264728]]  newmap null 
+17:32:27.076 INFO [L3Routing:Scheduled-3] Host h2 is no longer attached to a switch
+Switch=s6
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s5, Cost=2, Dir=s4, Port=3
+Switch=s4
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s2, Cost=2, Dir=s3, Port=2
+	Dest=s1, Cost=3, Dir=s3, Port=2
+	Dest=s5, Cost=1, Dir=s5, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=4
+Switch=s3
+	Dest=s2, Cost=1, Dir=s2, Port=1
+	Dest=s1, Cost=2, Dir=s2, Port=1
+	Dest=s4, Cost=1, Dir=s4, Port=2
+	Dest=s5, Cost=2, Dir=s4, Port=2
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s2
+	Dest=s1, Cost=1, Dir=s1, Port=1
+	Dest=s3, Cost=1, Dir=s3, Port=2
+	Dest=s4, Cost=2, Dir=s3, Port=2
+	Dest=s5, Cost=3, Dir=s3, Port=2
+	Dest=s6, Cost=2, Dir=s1, Port=1
+	Dest=s6, Cost=2, Dir=s3, Port=2
+	Dest=s6, Cost=3, Dir=s3, Port=2
+Switch=s1
+	Dest=s2, Cost=1, Dir=s2, Port=2
+	Dest=s3, Cost=2, Dir=s2, Port=2
+	Dest=s4, Cost=2, Dir=s6, Port=3
+	Dest=s5, Cost=3, Dir=s6, Port=3
+	Dest=s6, Cost=1, Dir=s6, Port=3
+Switch=s5
+	Dest=s4, Cost=1, Dir=s4, Port=3
+	Dest=s3, Cost=2, Dir=s4, Port=3
+	Dest=s2, Cost=3, Dir=s4, Port=3
+	Dest=s1, Cost=4, Dir=s4, Port=3
+	Dest=s6, Cost=2, Dir=s4, Port=3
+	Dest=s6, Cost=3, Dir=s4, Port=3
+	Dest=s6, Cost=5, Dir=s4, Port=3

@@ -3,6 +3,7 @@ package edu.wisc.cs.sdn.apps.util;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
 
 import org.openflow.protocol.OFFlowMod;
 import org.openflow.protocol.OFMatch;
@@ -120,6 +121,37 @@ public class SwitchCommands
     			NO_TIMEOUT, NO_TIMEOUT);
     }
     
+    /**
+     * Installs a rule with no timeout in a switch's flow table.
+     * @param sw the switch in which the rule should be installed
+     * @param table the table in which the rule should be installed
+     * @param matchCriteria the match criteria for the rule
+     * @param instructions the actions to apply to packets matching the rule
+     * @return true if the rule was sent to the switch, otherwise false
+     */
+    public static boolean installRule(IOFSwitch sw, byte table,
+            OFMatch matchCriteria, List<OFInstruction> instructions)
+    {
+    	return installRule(sw, table, DEFAULT_PRIORITY, matchCriteria, instructions, 
+    			NO_TIMEOUT, NO_TIMEOUT);
+    }
+
+    /**
+     * Installs a rule with no timeout in a switch's flow table.
+     * @param sw the switch in which the rule should be installed
+     * @param table the table in which the rule should be installed
+     * @param matchCriteria the match criteria for the rule
+     * @param instruction the action to apply to packets matching the rule
+     * @return true if the rule was sent to the switch, otherwise false
+     */
+    public static boolean installRule(IOFSwitch sw, byte table,
+            OFMatch matchCriteria, OFInstruction instruction)
+    {
+		List list = new ArrayList<OFInstruction>();
+		list.add( instruction );
+    	return installRule(sw, table, DEFAULT_PRIORITY, matchCriteria, list, NO_TIMEOUT, NO_TIMEOUT);
+    }
+
     /**
      * Remove a rule from a switch's flow table.
      * @param sw the switch from which the rule should be removed
