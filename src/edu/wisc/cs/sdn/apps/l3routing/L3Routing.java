@@ -76,38 +76,39 @@ public class L3Routing implements IFloodlightModule, IOFSwitchListener,
 			Route route = new Route();
 
 			if( shortestRoutesMap.containsKey( srcSw ) ) {
-					routes = shortestRoutesMap.get( srcSw );
-					}
-					else {
-					routes = new LinkedList<Route>();
-					shortestRoutesMap.put( srcSw, routes ); 
-					}
+					  routes = shortestRoutesMap.get( srcSw );
+			}
+			else {
+					  routes = new LinkedList<Route>();
+					  shortestRoutesMap.put( srcSw, routes ); 
+			}
 
-					boolean ignoreLink = false;
+			boolean ignoreLink = false;
 
-					for( Route currentRoute : routes ) {
-					if( currentRoute.dest.getId() == dstSw.getId( )) {
-					ignoreLink = true;	
-					}
-					}
+			for( Route currentRoute : routes ) {
+					  if( currentRoute.dest.getId() == dstSw.getId( )) {
+								 ignoreLink = true;	
+					  }
+			}
 
-					if( ignoreLink ) {
-					continue;
-					}
+			if( ignoreLink ) {
+					  continue;
+			}
 
-					route.dest = dstSw;
-					route.cost = 1;
-					route.dir = route.dest;
-					route.portNumber = link.getSrcPort();
+			route.dest = dstSw;
+			route.cost = 1;
+			route.dir = route.dest;
+			route.portNumber = link.getSrcPort();
 
-					routes.add( route );
+			routes.add( route );
 		}
 
 	}
 
 	private void buildRoutes() {
-		//LinkedList<IOFSwitch> switches = new LinkedList<IOFSwitch>();
-		//LinkedList<Route> newRoutes = new LinkedList<Route>();
+	//	LinkedList<IOFSwitch> switches = new LinkedList<IOFSwitch>();
+	//	LinkedList<Route> newRoutes = new LinkedList<Route>();
+		ConcurrentHashMap<IOFSwitch, LinkedList<Route>> newRoutesMap = new ConcurrentHashMap<IOFSwitch, LinkedList<Route>>();
 		Map<Long, IOFSwitch> map = getSwitches();	
 		boolean repeat = false;
 		for( IOFSwitch sw : map.values() ) {
@@ -128,18 +129,36 @@ public class L3Routing implements IFloodlightModule, IOFSwitchListener,
 							continue;
 						}
 						boolean addRoute = true;
+						boolean routeFound = false;
 						for( Route knownRoute : shortestRoutesMap.get( sw ) ) {
 							if( knownRoute.dest.getId() == endRoute.dest.getId() ) {
-								// already has a route
 								if( knownRoute.cost > frontRoute.cost + endRoute.cost ) {
 									// should replace the knownRoute
 									knownRoute.cost = frontRoute.cost + endRoute.cost;
 									knownRoute.dir = frontRoute.dir;
 									knownRoute.portNumber = frontRoute.portNumber;
 									repeat = true;
+									routeFound = true;
 								}
 								addRoute = false;
 								break;
+							}
+						}
+						if( routeFound == false ) {
+							if( newRoutesMap.containsKey( sw ) ) {
+								for( Route newKnownRoute : newRoutesMap.get( sw ) ) {
+									if( newKnownRoute.dest.getId() == endRoute.dest.getId() ) {
+										// already has a route
+										if( newKnownRoute.cost > frontRoute.cost + endRoute.cost ) {
+											// should replace the knownRoute
+											newKnownRoute.cost = frontRoute.cost + endRoute.cost;
+											newKnownRoute.dir = frontRoute.dir;
+											newKnownRoute.portNumber = frontRoute.portNumber;
+										}
+										addRoute = false;
+										break;
+									}
+								}
 							}
 						}
 
@@ -150,8 +169,17 @@ public class L3Routing implements IFloodlightModule, IOFSwitchListener,
 							newRoute.cost = frontRoute.cost + endRoute.cost;
 							newRoute.dir = frontRoute.dir;
 							newRoute.portNumber = frontRoute.portNumber;
+							LinkedList<Route> routes;
 
-							shortestRoutesMap.get( sw ).add( newRoute );
+							if( newRoutesMap.containsKey( sw ) ) {
+									  routes = newRoutesMap.get( sw );
+							}
+							else {
+									  routes = new LinkedList<Route>();
+									  newRoutesMap.put( sw, routes ); 
+							}
+							routes.add( newRoute );
+							//shortestRoutesMap.get( sw ).add( newRoute );
 							//switches.add( sw );
 							//newRoutes.add( newRoute );
 							repeat = true;
@@ -160,14 +188,19 @@ public class L3Routing implements IFloodlightModule, IOFSwitchListener,
 				}
 			}
 		}
+		for( IOFSwitch sw : newRoutesMap.keySet() ) {
+			shortestRoutesMap.get( sw ).addAll( newRoutesMap.get( sw ) );
+		}
+		/*
+		for( int i = 0; i < newRoutes.size(); ++i ) {
+		   shortestRoutesMap.get( switches.get( i ) ).add( newRoutes.get( i ) );
+		}
+		*/
 		if( repeat ) {
 			buildRoutes();
 		}
-		/*
-		   for( int i = 0; i < newRoutes.size(); ++i ) {
-		   shortestRoutesMap.get( switches.get( i ) ).add( newRoutes.get( i ) );
-		   }
-		 */
+		
+		 
 	}
 
 	private void updateMap( boolean switchChanged ) {
