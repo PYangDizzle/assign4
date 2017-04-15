@@ -1,4 +1,8 @@
-floodlight-plus
+/*
+!/src/
+!.gitignore
+
+#floodlight-plus
 
 #!/src/
 #bin
